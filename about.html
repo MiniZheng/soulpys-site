@@ -12,7 +12,7 @@
             background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://sc02.alicdn.com/kf/Hd586ad73242444579d8cd8590de49777r.jpg'); 
             background-size: cover; background-position: center; 
         }
-        .img-zoom:hover img { transform: scale(1.05); }
+        .gallery-item:hover img { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -20,8 +20,8 @@
     <!-- Navigation -->
     <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-20 items-center">
-            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900 text-slate-900 !important">SOULPYS<span class="text-amber-500">.</span></a>
-            <div class="hidden md:flex space-x-10 font-bold text-slate-500 text-sm uppercase tracking-widest">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900">SOULPYS<span class="text-amber-500">.</span></a>
+            <div class="hidden md:flex space-x-10 font-bold text-slate-500 text-sm uppercase tracking-widest text-slate-500 !important">
                 <a href="index.html" class="hover:text-slate-900 transition">Home</a>
                 <a href="about.html" class="text-slate-900 border-b-2 border-amber-500 pb-1">About Us</a>
                 <a href="index.html#solutions" class="hover:text-slate-900 transition">Solutions</a>
@@ -33,95 +33,87 @@
     <!-- Page Header -->
     <section class="factory-hero py-32 text-center text-white">
         <div class="max-w-4xl mx-auto px-4">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 italic tracking-tighter uppercase">Our Story & Factory</h1>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 italic tracking-tighter uppercase text-white !important">Our Story & Factory</h1>
             <p class="text-xl text-slate-300 font-light">Manufacturing Excellence in Jieyang, Guangdong since 2011.</p>
         </div>
     </section>
 
-    <!-- Detailed Intro & Factory Highlights -->
+    <!-- Detailed Intro -->
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
-                <div class="space-y-8">
-                    <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase">A Legacy of Quality</h2>
-                    <div class="w-20 h-1 bg-amber-500"></div>
-                    <div class="text-slate-600 leading-relaxed space-y-4 text-lg">
-                        <p>Jieyang SOULPYS Stainless Steel Cutlery Factory is a professional cutlery flatware factory. Our core teammates have been in this industry for over 20 years, so we are very experienced.</p>
-                        <p>We know how to make a product exactly the way you want it to be. Our main products are stainless steel cutlery, flatware, chopsticks, measuring scoops and kitchen utensils.</p>
-                        <p>We take pride in our strict quality control and thoughtful customer service. Our products are selling well in the USA, UK, Germany, Malaysia, Brazil, and Thailand.</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="rounded-2xl overflow-hidden shadow-xl">
-                        <img src="https://sc02.alicdn.com/kf/Hb0be6d33c9944522a7fe7606e6ce3442x.jpg" alt="Stamping Production" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden shadow-xl mt-8">
-                        <img src="https://sc02.alicdn.com/kf/Ha4f21c0e8fc44bf9999303aab921c9a3Q.jpg" alt="Advanced Equipment" class="w-full h-64 object-cover">
-                    </div>
+            <div class="max-w-3xl mb-20 text-left">
+                <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase mb-8">A Legacy of Quality</h2>
+                <div class="w-20 h-1 bg-amber-500 mb-8"></div>
+                <div class="text-slate-600 leading-relaxed space-y-6 text-lg">
+                    <p>Jieyang SOULPYS Stainless Steel Cutlery Factory is a professional cutlery flatware factory. Our core teammates have been in this industry for over 20 years, so we are very experienced.</p>
+                    <p>We know how to make a product exactly the way you want it to be. Our main products are stainless steel cutlery, flatware, chopsticks, measuring scoops and kitchen utensils.</p>
+                    <p>We take pride in our strict quality control and thoughtful customer service. Our products are selling well in the USA, UK, Germany, Malaysia, Brazil, and Thailand.</p>
                 </div>
             </div>
 
-            <!-- Full Width Workspace Visuals -->
-            <div class="space-y-8">
-                <div class="relative group rounded-[2rem] overflow-hidden shadow-2xl h-[500px]">
-                    <img src="https://sc02.alicdn.com/kf/H4d65f28de9b041dca5c98fc7a6110923j.jpg" alt="Production Workshop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-12">
-                        <div class="text-white">
-                            <h3 class="text-2xl font-bold uppercase italic tracking-tighter mb-2">High-Capacity Workshop</h3>
-                            <p class="text-slate-200 uppercase tracking-widest text-xs font-bold">Automated production lines for global volume supply.</p>
-                        </div>
-                    </div>
+            <!-- Factory Gallery Grid (4 Pictures together) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="gallery-item relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] group">
+                    <img src="https://sc02.alicdn.com/kf/Hb0be6d33c9944522a7fe7606e6ce3442x.jpg" class="w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    <span class="absolute bottom-6 left-8 text-white font-bold uppercase tracking-widest text-xs">Production Line</span>
                 </div>
-                <div class="relative group rounded-[2rem] overflow-hidden shadow-2xl h-[500px]">
-                    <img src="https://sc02.alicdn.com/kf/H70e628c720bc417fac56aff04e4c918eR.jpg" alt="Warehouse" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-12">
-                        <div class="text-white">
-                            <h3 class="text-2xl font-bold uppercase italic tracking-tighter mb-2 text-white !important">Organized Distribution Center</h3>
-                            <p class="text-slate-200 uppercase tracking-widest text-xs font-bold text-white !important">Efficient stock management ensuring fast delivery and short lead times.</p>
-                        </div>
-                    </div>
+                <div class="gallery-item relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] group">
+                    <img src="https://sc02.alicdn.com/kf/Ha4f21c0e8fc44bf9999303aab921c9a3Q.jpg" class="w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    <span class="absolute bottom-6 left-8 text-white font-bold uppercase tracking-widest text-xs">Advanced Equipment</span>
+                </div>
+                <div class="gallery-item relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] group">
+                    <img src="https://sc02.alicdn.com/kf/H2bc8e25035d3402b97bbc7b035b6194cg.jpg" class="w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    <span class="absolute bottom-6 left-8 text-white font-bold uppercase tracking-widest text-xs">Precision Workshop</span>
+                </div>
+                <div class="gallery-item relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] group">
+                    <img src="https://sc02.alicdn.com/kf/H70e628c720bc417fac56aff04e4c918eR.jpg" class="w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                    <span class="absolute bottom-6 left-8 text-white font-bold uppercase tracking-widest text-xs">Warehouse Capacity</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Competitive Advantages -->
-    <section class="py-24 bg-slate-50">
+    <section class="py-24 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
                 <div>
                     <div class="text-amber-500 text-4xl mb-4 font-bold italic">20+</div>
-                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Industry Years</h3>
-                    <p class="text-slate-400 text-xs">Unmatched expertise in stainless steel crafts.</p>
+                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2 text-slate-900 !important">Industry Years</h3>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Global Expertise</p>
                 </div>
                 <div>
                     <div class="text-amber-500 text-4xl mb-4 font-bold italic">Fast</div>
-                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Response</h3>
-                    <p class="text-slate-400 text-xs">24/7 dedicated support for global timezones.</p>
+                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2 text-slate-900 !important">Response</h3>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">24/7 Dedicated Support</p>
                 </div>
                 <div>
                     <div class="text-amber-500 text-4xl mb-4 font-bold italic">Short</div>
-                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Lead Time</h3>
-                    <p class="text-slate-400 text-xs">Big stock warehouse ensuring fast delivery.</p>
+                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2 text-slate-900 !important">Lead Time</h3>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Efficient Production</p>
                 </div>
                 <div>
                     <div class="text-amber-500 text-4xl mb-4 font-bold italic">Flexible</div>
-                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2">MOQ</h3>
-                    <p class="text-slate-400 text-xs">Supporting Amazon & Online startups.</p>
+                    <h3 class="font-bold uppercase tracking-widest text-sm mb-2 text-slate-900 !important">MOQ</h3>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Supporting Startups</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Certification -->
-    <section class="py-24 bg-white border-t border-slate-100">
+    <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase mb-16">Global Compliance</h2>
-            <div class="flex flex-wrap justify-center items-center gap-16 opacity-60">
-                <span class="text-3xl font-bold tracking-widest text-slate-300">LFGB</span>
-                <span class="text-3xl font-bold tracking-widest text-slate-300">FDA</span>
-                <span class="text-3xl font-bold tracking-widest text-slate-300">SGS</span>
-                <span class="text-3xl font-bold tracking-widest text-slate-300">TEST REPORT</span>
+            <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase mb-16">Compliance & Trust</h2>
+            <div class="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <span class="text-3xl font-black tracking-widest text-slate-900">LFGB</span>
+                <span class="text-3xl font-black tracking-widest text-slate-900">FDA</span>
+                <span class="text-3xl font-black tracking-widest text-slate-900">SGS</span>
+                <span class="text-3xl font-black tracking-widest text-slate-900">TEST REPORT</span>
             </div>
         </div>
     </section>
