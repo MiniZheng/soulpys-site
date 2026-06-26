@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOULPYS | 1-Piece MOQ Stainless Steel Cutlery Manufacturer</title>
+    <title>SOULPYS | Professional Stainless Steel Cutlery Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -12,187 +12,173 @@
             background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://sc02.alicdn.com/kf/H4ca434f6f2f54b3c9e38b869b0309517N.jpg'); 
             background-size: cover; background-position: center; 
         }
-        @keyframes pulse-gold {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
-            70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
-        }
-        .cta-pulse { animation: pulse-gold 2s infinite; }
+        .solution-card:hover .overlay { opacity: 1; }
+        .solution-card:hover img { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-white text-slate-900">
-
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/8615986432394?text=Hi%20SOULPYS%2C%20I'm%20interested%20in%20your%201-piece%20MOQ%20service%20and%20would%20like%20to%20get%20a%20FREE%20SAMPLE." 
-       target="_blank" 
-       class="fixed bottom-8 right-8 z-[9999] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:bg-[#128C7E] hover:-translate-y-1">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
 
     <!-- Navigation -->
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-20 items-center">
             <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900">SOULPYS<span class="text-amber-500">.</span></a>
-            <div class="hidden md:flex space-x-10 font-bold text-slate-500 text-sm uppercase tracking-widest">
+            <div class="hidden md:flex space-x-8 font-bold text-slate-500 text-[10px] uppercase tracking-[0.2em]">
                 <a href="index.html" class="text-slate-900 border-b-2 border-amber-500 pb-1">Home</a>
-                <a href="about.html" class="hover:text-slate-900 transition">About Us</a>
-                <a href="#solutions" class="hover:text-slate-900 transition">Solutions</a>
-                <a href="#contact" class="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-amber-600 transition shadow-xl">Contact</a>
+                <a href="about.html" class="hover:text-slate-900 transition">About Factory</a>
+                <a href="#solutions" class="hover:text-slate-900 transition">Industries</a>
+                <a href="#products" class="hover:text-slate-900 transition">Categories</a>
+                <a href="#contact" class="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-amber-600 transition shadow-xl ml-4">Inquiry</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-bg h-[85vh] flex items-center justify-center text-center text-white px-4">
-        <div class="max-w-5xl">
+        <div class="max-w-5xl animate-fade-in">
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <span class="bg-amber-500 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">START FROM 1 PIECE</span>
-                <span class="bg-white/20 backdrop-blur-md text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-white/30">FREE SAMPLES AVAILABLE</span>
+                <span class="bg-amber-500 text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg">1-Piece MOQ Service</span>
+                <span class="bg-white/10 backdrop-blur-md text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/20">Free Samples</span>
             </div>
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 leading-tight tracking-tighter italic">Low MOQ, <br>High Excellence.</h1>
-            <p class="text-lg md:text-2xl mb-12 text-slate-100 max-w-2xl mx-auto font-light leading-relaxed">Specialized in Small Batch Customization for Amazon & E-commerce Brands. Premium Quality with Factory Direct Prices.</p>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 leading-tight tracking-tighter italic text-white !important">Crafting Excellence <br>For Your Table.</h1>
+            <p class="text-lg md:text-2xl mb-12 text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">Direct Factory Source for Professional Cutlery & Kitchen-ware. Tailored Solutions for Hospitality, Events & Retail Brands.</p>
             <div class="flex flex-wrap justify-center gap-6">
-                <a href="#contact" class="cta-pulse bg-amber-500 text-white px-12 py-5 rounded-full text-lg font-bold transition hover:bg-amber-600 shadow-2xl">Request Free Sample</a>
-                <a href="#contact" class="border-2 border-white text-white px-12 py-5 rounded-full text-lg font-bold transition hover:bg-white hover:text-slate-900">Inquire 1-pc MOQ</a>
+                <a href="#contact" class="bg-white text-slate-900 px-12 py-5 rounded-full text-lg font-bold transition hover:bg-amber-500 hover:text-white shadow-2xl uppercase tracking-widest text-sm">Get a Quote</a>
+                <a href="#products" class="border border-white/40 text-white px-12 py-5 rounded-full text-lg font-bold transition hover:bg-white/10 backdrop-blur-sm uppercase tracking-widest text-sm">Browse Products</a>
             </div>
         </div>
     </section>
 
-    <!-- Core Selling Points (NEW Highlight Bar) -->
-    <section class="bg-slate-900 py-10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-800">
-                <div class="flex items-center justify-center gap-4 py-4 md:py-0">
-                    <span class="text-amber-500 font-bold text-3xl italic">01</span>
-                    <span class="text-white font-bold uppercase tracking-widest text-sm">MOQ Starts from 1 pc</span>
-                </div>
-                <div class="flex items-center justify-center gap-4 py-4 md:py-0">
-                    <span class="text-amber-500 font-bold text-3xl italic">02</span>
-                    <span class="text-white font-bold uppercase tracking-widest text-sm">Low MOQ Logo Branding</span>
-                </div>
-                <div class="flex items-center justify-center gap-4 py-4 md:py-0">
-                    <span class="text-amber-500 font-bold text-3xl italic">03</span>
-                    <span class="text-white font-bold uppercase tracking-widest text-sm">FREE Sample Policy</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customized Logo Process Section -->
-    <section class="py-32 bg-slate-950 text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div class="relative">
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl"></div>
-                    <img src="https://sc02.alicdn.com/kf/H69d5ea60091e4369b8e88f10aa172f6aA.jpg" alt="Customized Logo Process" class="rounded-3xl shadow-2xl border border-white/10 w-full relative z-10 transform hover:scale-[1.02] transition">
-                </div>
-                <div>
-                    <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Small Batch Branding</span>
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 italic leading-tight tracking-tighter uppercase text-white">Scale Your Brand <br>With Minimal Risk.</h2>
-                    <p class="text-slate-400 text-lg mb-10 leading-relaxed font-light">Supporting Amazon sellers and online startups with flexible production. We offer professional laser engraving and custom packaging even for small trial orders.</p>
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-amber-500/20 text-amber-500 rounded-full flex items-center justify-center font-bold">✓</div>
-                            <span class="font-bold text-slate-200 uppercase tracking-widest text-sm">Low MOQ Logo Customization</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-amber-500/20 text-amber-500 rounded-full flex items-center justify-center font-bold">✓</div>
-                            <span class="font-bold text-slate-200 uppercase tracking-widest text-sm">Bespoke Packaging Design</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-amber-500/20 text-amber-500 rounded-full flex items-center justify-center font-bold">✓</div>
-                            <span class="font-bold text-slate-200 uppercase tracking-widest text-sm">1-Piece Sample Testing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions & Applications -->
-    <section id="solutions" class="py-32 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 italic tracking-tighter uppercase">Industry Solutions</h2>
-                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Applications list... -->
-                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer shadow-xl text-left">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent text-white p-8 flex flex-col justify-end">
-                        <h3 class="text-2xl font-bold uppercase italic tracking-tighter">Luxury Hotels</h3>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer shadow-xl text-left">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent text-white p-8 flex flex-col justify-end">
-                        <h3 class="text-2xl font-bold mb-2 uppercase italic tracking-tighter">Wedding Events</h3>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer shadow-xl text-left">
-                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent text-white p-8 flex flex-col justify-end">
-                        <h3 class="text-2xl font-bold mb-2 uppercase italic tracking-tighter">Bar & Lounge</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products -->
+    <!-- Product Category Section (NEW) -->
     <section id="products" class="py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-slate-900 mb-20 italic uppercase tracking-tighter">Featured Items</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden rounded-sm bg-slate-50 mb-8 aspect-[4/3]">
-                        <img src="https://sc02.alicdn.com/kf/H4ca434f6f2f54b3c9e38b869b0309517N.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000">
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2 uppercase italic tracking-tighter">Mirror Polish Collection</h3>
-                            <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Ready to Ship | 1-pc MOQ</p>
-                        </div>
-                    </div>
+            <div class="text-center md:text-left mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 italic tracking-tighter uppercase">Product Categories</h2>
+                <div class="w-20 h-1 bg-amber-500"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="group border-b border-slate-100 pb-10 hover:border-amber-500 transition-all cursor-pointer">
+                    <div class="text-slate-300 font-bold mb-4 italic">01.</div>
+                    <h3 class="text-xl font-bold uppercase tracking-tighter mb-4">Cutlery Sets</h3>
+                    <p class="text-slate-400 text-sm mb-6 font-light">Mirror polished 18/10 & 18/0 flatware sets for premium dining.</p>
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:pl-2 transition-all">Explore &rarr;</span>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden rounded-sm bg-slate-50 mb-8 aspect-[4/3]">
-                        <img src="https://sc02.alicdn.com/kf/Ha795616a40b940f9bbcc76478343e8ebq.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000">
+                <div class="group border-b border-slate-100 pb-10 hover:border-amber-500 transition-all cursor-pointer">
+                    <div class="text-slate-300 font-bold mb-4 italic">02.</div>
+                    <h3 class="text-xl font-bold uppercase tracking-tighter mb-4">Kitchen Gadgets</h3>
+                    <p class="text-slate-400 text-sm mb-6 font-light">Precision measuring spoons and functional stainless tools.</p>
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:pl-2 transition-all">Explore &rarr;</span>
+                </div>
+                <div class="group border-b border-slate-100 pb-10 hover:border-amber-500 transition-all cursor-pointer">
+                    <div class="text-slate-300 font-bold mb-4 italic">03.</div>
+                    <h3 class="text-xl font-bold uppercase tracking-tighter mb-4">Buffet & Service</h3>
+                    <p class="text-slate-400 text-sm mb-6 font-light">High-volume catering tools for professional banquets.</p>
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:pl-2 transition-all">Explore &rarr;</span>
+                </div>
+                <div class="group border-b border-slate-100 pb-10 hover:border-amber-500 transition-all cursor-pointer">
+                    <div class="text-slate-300 font-bold mb-4 italic">04.</div>
+                    <h3 class="text-xl font-bold uppercase tracking-tighter mb-4">Color Collection</h3>
+                    <p class="text-slate-400 text-sm mb-6 font-light">Trend-setting PVD Gold, Black & Rose Gold finish cutlery.</p>
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest group-hover:pl-2 transition-all">Explore &rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Solutions Section (Optimized as Entry Points) -->
+    <section id="solutions" class="py-32 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 italic tracking-tighter uppercase">Industry Solutions</h2>
+                <p class="text-slate-500 text-lg max-w-2xl mx-auto font-light">Explore our curated collections designed specifically for your business sector.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Each card now looks like a portal -->
+                <a href="#" class="solution-card group relative block overflow-hidden rounded-sm aspect-[4/5] shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000">
+                    <div class="overlay absolute inset-0 bg-slate-900/40 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="border border-white text-white px-8 py-3 uppercase tracking-[0.3em] text-[10px] font-bold">View Solution</span>
                     </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2 uppercase italic tracking-tighter">Professional Kitchen-ware</h3>
-                            <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">OEM Ready | Low MOQ Logo</p>
-                        </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-slate-900/80 to-transparent">
+                        <h3 class="text-2xl font-bold uppercase italic mb-1">Luxury Hotels</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-slate-300">5-Star Standards & Bulk Supply</p>
                     </div>
+                </a>
+                
+                <a href="#" class="solution-card group relative block overflow-hidden rounded-sm aspect-[4/5] shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000">
+                    <div class="overlay absolute inset-0 bg-slate-900/40 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="border border-white text-white px-8 py-3 uppercase tracking-[0.3em] text-[10px] font-bold">View Solution</span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-slate-900/80 to-transparent">
+                        <h3 class="text-2xl font-bold uppercase italic mb-1 text-white !important">Wedding Events</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-slate-300">Elegant Designs & PVD Finishes</p>
+                    </div>
+                </a>
+
+                <a href="#" class="solution-card group relative block overflow-hidden rounded-sm aspect-[4/5] shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000">
+                    <div class="overlay absolute inset-0 bg-slate-900/40 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="border border-white text-white px-8 py-3 uppercase tracking-[0.3em] text-[10px] font-bold">View Solution</span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-slate-900/80 to-transparent">
+                        <h3 class="text-2xl font-bold uppercase italic mb-1 text-white !important">Bar & Lounge</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-slate-300">Pro Barware & Cocktail Tools</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- More Industry buttons below if needed -->
+            <div class="mt-12 flex flex-wrap justify-center gap-4 text-center">
+                <a href="#" class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 hover:text-amber-600 transition">Buffet & Catering</a>
+                <span class="text-slate-200">/</span>
+                <a href="#" class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 hover:text-amber-600 transition">Modern Home Dining</a>
+                <span class="text-slate-200">/</span>
+                <a href="#" class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 hover:text-amber-600 transition">Specialty Coffee Shops</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory & OEM (Visual Focus) -->
+    <section id="why-us" class="py-32 bg-slate-950 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <img src="https://sc02.alicdn.com/kf/H69d5ea60091e4369b8e88f10aa172f6aA.jpg" class="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700 w-full">
+                </div>
+                <div>
+                    <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-[10px] mb-6 block">The Factory Standard</span>
+                    <h2 class="text-5xl font-extrabold mb-10 italic leading-tight uppercase tracking-tighter text-white !important">Your Brand, <br>Our Craft.</h2>
+                    <p class="text-slate-400 text-lg mb-12 font-light leading-relaxed">Direct manufacturer from Jieyang, Guangdong. Specializing in low MOQ branding for global Amazon sellers and high-volume supply for major distributors.</p>
+                    <a href="about.html" class="inline-block border-b-2 border-amber-500 pb-2 text-[10px] font-bold uppercase tracking-[0.3em] hover:text-amber-500 transition">Learn More About Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Inquiry Section -->
-    <section id="contact" class="py-32 bg-slate-50">
+    <section id="contact" class="py-32 bg-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-5xl font-extrabold mb-8 italic uppercase tracking-tighter">Get a Free Sample Today.</h2>
-            <p class="text-slate-500 mb-16 text-lg font-light">Direct factory wholesale. Start your business with zero inventory risk.</p>
+            <h2 class="text-5xl font-extrabold mb-8 italic uppercase tracking-tighter">Let's Talk Business.</h2>
+            <p class="text-slate-500 mb-16 text-lg font-light">Send us your requirements. Our specialists will provide a custom quote within 24 hours.</p>
             
-            <form action="https://formspree.io/f/xykavwvb" method="POST" class="text-left space-y-10">
+            <form action="https://formspree.io/f/xykavwvb" method="POST" class="text-left space-y-12">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div class="border-b-2 border-slate-200 pb-2 focus-within:border-amber-500 transition-all">
+                    <div class="border-b-2 border-slate-100 pb-2 focus-within:border-slate-900 transition-all">
                         <label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1">Your Name</label>
-                        <input type="text" name="name" required class="w-full bg-transparent outline-none text-xl">
+                        <input type="text" name="name" required class="w-full bg-transparent outline-none text-xl font-medium">
                     </div>
-                    <div class="border-b-2 border-slate-200 pb-2 focus-within:border-amber-500 transition-all">
-                        <label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1">Email</label>
-                        <input type="email" name="email" required class="w-full bg-transparent outline-none text-xl">
+                    <div class="border-b-2 border-slate-100 pb-2 focus-within:border-slate-900 transition-all">
+                        <label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1">Company Email</label>
+                        <input type="email" name="email" required class="w-full bg-transparent outline-none text-xl font-medium">
                     </div>
                 </div>
-                <div class="border-b-2 border-slate-200 pb-2 focus-within:border-amber-500 transition-all">
-                    <label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1">Inquiry Details (Mention "Free Sample" or "1pc MOQ")</label>
-                    <textarea name="message" rows="2" required class="w-full bg-transparent outline-none text-xl resize-none"></textarea>
+                <div class="border-b-2 border-slate-100 pb-2 focus-within:border-slate-900 transition-all">
+                    <label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1">Project Details</label>
+                    <textarea name="message" rows="2" required class="w-full bg-transparent outline-none text-xl font-medium resize-none"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-6 rounded-none uppercase tracking-[0.4em] text-xs hover:bg-amber-600 transition shadow-2xl active:scale-95">Send Free Inquiry</button>
+                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-7 rounded-none uppercase tracking-[0.4em] text-xs hover:bg-amber-600 transition shadow-2xl active:scale-95">Send Free Inquiry</button>
             </form>
         </div>
     </section>
@@ -201,7 +187,7 @@
     <footer class="py-24 border-t border-slate-100 bg-white">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="text-xl font-extrabold text-slate-900 mb-8 tracking-tighter italic">SOULPYS<span class="text-amber-500">.</span></div>
-            <p class="text-[10px] uppercase tracking-[0.5em] text-slate-400 font-bold mb-12">1-Piece MOQ | Free Samples | Premium Cutlery</p>
+            <p class="text-[10px] uppercase tracking-[0.5em] text-slate-400 mb-12 font-bold">1-Piece MOQ | Free Samples | Premium Cutlery</p>
             <div class="flex justify-center space-x-12 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                 <a href="index.html" class="hover:text-slate-900 transition">Home</a>
                 <a href="about.html" class="hover:text-slate-900 transition">About Factory</a>
