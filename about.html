@@ -12,6 +12,7 @@
             background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://sc02.alicdn.com/kf/Hd586ad73242444579d8cd8590de49777r.jpg'); 
             background-size: cover; background-position: center; 
         }
+        .img-zoom:hover img { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -19,12 +20,12 @@
     <!-- Navigation -->
     <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-20 items-center">
-            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900">SOULPYS<span class="text-amber-500">.</span></a>
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900 text-slate-900 !important">SOULPYS<span class="text-amber-500">.</span></a>
             <div class="hidden md:flex space-x-10 font-bold text-slate-500 text-sm uppercase tracking-widest">
                 <a href="index.html" class="hover:text-slate-900 transition">Home</a>
                 <a href="about.html" class="text-slate-900 border-b-2 border-amber-500 pb-1">About Us</a>
                 <a href="index.html#solutions" class="hover:text-slate-900 transition">Solutions</a>
-                <a href="index.html#contact" class="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-amber-600 transition shadow-xl">Contact</a>
+                <a href="index.html#contact" class="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-amber-600 transition shadow-xl text-white !important">Contact</a>
             </div>
         </div>
     </nav>
@@ -37,10 +38,10 @@
         </div>
     </section>
 
-    <!-- Detailed Intro -->
+    <!-- Detailed Intro & Factory Highlights -->
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
                 <div class="space-y-8">
                     <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase">A Legacy of Quality</h2>
                     <div class="w-20 h-1 bg-amber-500"></div>
@@ -51,8 +52,34 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <img src="https://sc02.alicdn.com/kf/H5ad589d0ae5a419e823819421ddd37daj.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover">
-                    <img src="https://sc02.alicdn.com/kf/H4d65f28de9b041dca5c98fc7a6110923j.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://sc02.alicdn.com/kf/Hb0be6d33c9944522a7fe7606e6ce3442x.jpg" alt="Stamping Production" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl mt-8">
+                        <img src="https://sc02.alicdn.com/kf/Ha4f21c0e8fc44bf9999303aab921c9a3Q.jpg" alt="Advanced Equipment" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Width Workspace Visuals -->
+            <div class="space-y-8">
+                <div class="relative group rounded-[2rem] overflow-hidden shadow-2xl h-[500px]">
+                    <img src="https://sc02.alicdn.com/kf/H4d65f28de9b041dca5c98fc7a6110923j.jpg" alt="Production Workshop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-12">
+                        <div class="text-white">
+                            <h3 class="text-2xl font-bold uppercase italic tracking-tighter mb-2">High-Capacity Workshop</h3>
+                            <p class="text-slate-200 uppercase tracking-widest text-xs font-bold">Automated production lines for global volume supply.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group rounded-[2rem] overflow-hidden shadow-2xl h-[500px]">
+                    <img src="https://sc02.alicdn.com/kf/H70e628c720bc417fac56aff04e4c918eR.jpg" alt="Warehouse" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-12">
+                        <div class="text-white">
+                            <h3 class="text-2xl font-bold uppercase italic tracking-tighter mb-2 text-white !important">Organized Distribution Center</h3>
+                            <p class="text-slate-200 uppercase tracking-widest text-xs font-bold text-white !important">Efficient stock management ensuring fast delivery and short lead times.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,8 +113,8 @@
         </div>
     </section>
 
-    <!-- Certification & Compliance -->
-    <section class="py-24 bg-white">
+    <!-- Certification -->
+    <section class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl font-extrabold italic tracking-tighter uppercase mb-16">Global Compliance</h2>
             <div class="flex flex-wrap justify-center items-center gap-16 opacity-60">
@@ -96,7 +123,6 @@
                 <span class="text-3xl font-bold tracking-widest text-slate-300">SGS</span>
                 <span class="text-3xl font-bold tracking-widest text-slate-300">TEST REPORT</span>
             </div>
-            <p class="mt-12 text-slate-400 text-sm italic">All products undergo 100% manual inspection before shipment.</p>
         </div>
     </section>
 
