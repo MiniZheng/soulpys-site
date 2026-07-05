@@ -11,6 +11,12 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .product-card:hover img { transform: scale(1.05); }
         .aspect-square { aspect-ratio: 1 / 1; }
+        
+        /* 解决点击锚点后，标题被固定导航栏遮挡的问题 */
+        section[id], div[id] {
+            scroll-margin-top: 120px;
+        }
+
         @keyframes pulse-green {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
             70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
@@ -49,30 +55,42 @@
         </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-left">
-        <div class="flex flex-col lg:flex-row gap-12">
+        <div class="flex flex-col lg:flex-row gap-12 relative"> <!-- Added relative for sticky to work correctly -->
             
-            <!-- Sidebar -->
-            <aside class="w-full lg:w-64 space-y-10">
-                <div>
-                    <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6 font-bold">Collections</h3>
-                    <ul class="space-y-4 text-sm font-semibold">
-                        <li><a href="#" class="text-slate-500 hover:text-amber-600 transition">All Collections</a></li>
-                        <li><a href="#measuring-spoon" class="text-amber-600">Measuring Spoon</a></li>
-                        <li><a href="#cutlery-sets" class="hover:text-amber-600 transition text-slate-500">Cutlery Sets</a></li>
-                        <li><a href="#" class="hover:text-amber-600 transition text-slate-500">Kitchen Gadgets</a></li>
-                        <li><a href="#" class="hover:text-amber-600 transition text-slate-500">Cake Knife & Server</a></li>
-                    </ul>
+            <!-- Sidebar: Optimized with Sticky Behavior -->
+            <aside class="w-full lg:w-64 flex-shrink-0">
+                <div class="lg:sticky lg:top-28 space-y-10"> <!-- Fixed Sidebar here -->
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Collections</h3>
+                        <ul class="space-y-4 text-sm font-semibold">
+                            <li><a href="#" class="text-slate-500 hover:text-amber-600 transition">All Collections</a></li>
+                            <li><a href="#measuring-spoon" class="text-amber-600 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span> Measuring Spoon</a></li>
+                            <li><a href="#cutlery-sets" class="hover:text-amber-600 transition text-slate-500">Cutlery Sets</a></li>
+                            <li><a href="#" class="hover:text-amber-600 transition text-slate-500">Kitchen Gadgets</a></li>
+                            <li><a href="#" class="hover:text-amber-600 transition text-slate-500">Cake Knife & Server</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden lg:block pt-10 border-t border-slate-100">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-relaxed">
+                            Need custom logo?<br>
+                            <span class="text-amber-600">Low MOQ Customization</span> available for all items.
+                        </p>
+                    </div>
                 </div>
             </aside>
 
             <!-- Product Grid -->
-            <div class="flex-1 space-y-16">
+            <div class="flex-1 space-y-24">
                 
                 <!-- Section: Measuring Spoon -->
                 <div id="measuring-spoon">
-                    <h2 class="text-2xl font-bold uppercase italic tracking-tighter mb-10 border-l-4 border-amber-500 pl-4">Measuring Spoon</h2>
+                    <div class="flex items-center justify-between mb-10 border-b border-slate-100 pb-4">
+                        <h2 class="text-2xl font-bold uppercase italic tracking-tighter">Measuring Spoon</h2>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">5 Models</span>
+                    </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         <!-- S005 -->
                         <div class="group product-card">
@@ -139,7 +157,10 @@
 
                 <!-- Section: Cutlery Sets -->
                 <div id="cutlery-sets">
-                    <h2 class="text-2xl font-bold uppercase italic tracking-tighter mb-10 border-l-4 border-amber-500 pl-4">Cutlery Sets</h2>
+                    <div class="flex items-center justify-between mb-10 border-b border-slate-100 pb-4">
+                        <h2 class="text-2xl font-bold uppercase italic tracking-tighter">Cutlery Sets</h2>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">4 Models</span>
+                    </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         <!-- S009 -->
                         <div class="group product-card">
